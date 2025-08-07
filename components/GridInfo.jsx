@@ -65,8 +65,8 @@ const Grid1 = () => {
   return (
     <>
       <div className="w-full h-[200px] lg:h-[500px] flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden">
-        <h1>Time Development: </h1>
-        <div className="flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden lg:gap-3 gap-0">
+        <h1 className="text-outline lg:text-2xl lg:text-transparent lg:font-extrabold">Time Development </h1>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden lg:gap-3 gap-0 lg:p-3">
           {experience.map((item, index) => (
             <div
               key={index}
@@ -106,8 +106,8 @@ const Grid2 = () => {
   const textIndex = useRotateText(framework.length);
   return (
     <>
-      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5">
-        <h1 className="lg:text-[16px] text-12px">Comprehension of Technology: </h1>
+      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 gap-2">
+        <h1 className="text-12px text-outline lg:text-2xl lg:text-transparent lg:font-extrabold lg:block flex items-center justify-center">Comprehension of Technology </h1>
         <div className=" relative w-full h-full lg:h-[120px] bg-neutral-950 flex justify-center items-center">
           <Image
             src={img}
@@ -138,13 +138,11 @@ const Grid2 = () => {
 };
 
 const Grid3 = () => {
-  const img = useRotateImage();
   const textIndex = useRotateText(languages.length);
-  const glowColor = useRotateBg();
   return (
     <>
-      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 perspective-distant transform-3d group">
-        <h1>Language: </h1>
+      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 gap-2 perspective-distant transform-3d group">
+        <h1 className="text-outline lg:text-2xl lg:text-transparent lg:font-extrabold lg:block flex items-center justify-center">Language </h1>
         <div className=" relative w-full h-full lg:h-[150px] bg-dots-universe flex justify-center items-center">
           <Image
             src={Earth}
