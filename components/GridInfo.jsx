@@ -38,6 +38,7 @@ const framework = [
   "expressjs",
   "prisma",
   "postgreSQL",
+  "springboot",
 ];
 
 const languages = ["English", "Vietnamese"];

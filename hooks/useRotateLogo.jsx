@@ -36,6 +36,11 @@ export const frameworkThemes = [
     bg: "bg-white", // very dark blue
     shadowClass: "shadow-[0_0_25px_5px_rgba(51,103,145,0.6)]",
   },
+  {
+    // SpringBoot: blue elephant logo → near black-blue background
+    bg: "bg-white", // very dark blue
+    shadowClass: "shadow-[0_0_25px_5px_rgba(0,255,0,0.6)]",
+  },
 ];
 
 

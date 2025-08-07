@@ -6,6 +6,7 @@ import nextjsLogo from "@/public/assesst/nextjs.png";
 import expressjsLogo from "@/public/assesst/expressjs.png";
 import prismaLogo from "@/public/assesst/prisma.png";
 import postgresLogo from "@/public/assesst/postgres.png";
+import springbootLogo from '@/public/assesst/springboot.png'
 
 const imagesFramework = [
   reactLogo,
@@ -15,6 +16,7 @@ const imagesFramework = [
   expressjsLogo,
   prismaLogo,
   postgresLogo,
+  springbootLogo
 ];
 
 
