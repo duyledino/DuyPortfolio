@@ -8,12 +8,12 @@ const items = [
   {
     icon: <FaPhone className="group-hover:text-white transition-all text-[var(--highlight)]" />,
     title: "Phone",
-    detail: "(*84) 987654321",
+    detail: "(+84) 0938854826",
   },
   {
     icon: <IoIosMail className="group-hover:text-white transition-all text-[var(--highlight)]" />,
     title: "Mail",
-    detail: "myEmail@gmail.com",
+    detail: "lekhanhduy.bh@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt className="group-hover:text-white transition-all text-[var(--highlight)]" />,

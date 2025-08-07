@@ -16,7 +16,7 @@ const socialItems = [
 const Social = () => {
   return (
     <div className="flex w-full justify-center lg:justify-start gap-5 items-center">
-      <a href="/myCV/CV_Le Khanh Duy.pdf" download="LeKhanhDuy_CV.pdf">
+      <a href="/myCV/CV_Lê Khánh Duy.pdf" download="LeKhanhDuy_CV.pdf">
         <Button variant={"default"} download="DUY_CV.pdf">
           <FaDownload /> My Resume
         </Button>

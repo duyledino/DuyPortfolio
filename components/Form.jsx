@@ -47,7 +47,7 @@ const Form = ({ setLoading }) => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:3000/api/mail", {
+      const response = await fetch("/api/mail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
