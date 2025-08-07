@@ -12,24 +12,21 @@ import Earth from "@/public/assesst/Earth.png";
 
 const experience = [
   {
-    time: "2022-2026",
+    time: "2010 – 2015",
+    description: "Studied at Nguyen Khac Hieu Primary School",
+  },
+  {
+    time: "2015 – 2019",
+    description: "Studied at Nguyen Binh Khiem Secondary School",
+  },
+  {
+    time: "2022 – 2026",
+    description: "Studied at Ngo Quyen High School",
+  },
+  {
+    time: "2022 - 2026",
     description:
       "Graduate Software Development at SaiGon Techonology University",
-  },
-  {
-    time: "20xx-20xx",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, beatae.",
-  },
-  {
-    time: "20xx-20xx",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, beatae.",
-  },
-  {
-    time: "20xx-20xx",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, beatae.",
   },
 ];
 
@@ -68,33 +65,36 @@ const Grid1 = () => {
   return (
     <>
       <div className="w-full h-[200px] lg:h-[500px] flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden">
-        {experience.map((item, index) => (
-          <div
-            key={index}
-            className={`group flex flex-col gap-8 lg:w-[48%] lg:h-48 lg:p-2 lg:gap-5 lg:min-h-48 min-h-full w-full  border lg:border-white border-[varchar(--highlight)] lg:translate-0 ${translateY} transition-all  ${
-              index === currentId
-                ? `lg:translate-0 lg:shadow-[0_0_25px_5px_rgba(140,0,255,0.5)] lg:border-[varchar(--highlight)]`
-                : ""
-            } p-2`}
-            style={
-              // Only apply inline translateY on small screens
-              typeof window !== "undefined" && window.innerWidth < 1024
-                ? { transform: `translateY(-${currentId * 100}%)` }
-                : {}
-            }
-          >
-            <div className="w-full h-[10%]">
-              <h1>
-                {" "}
-                <span className="text-2xl font-extrabold text-outline text-transparent group-hover:text-outline-hover">
-                  {index + 1}.{" "}
-                </span>{" "}
-                {item.time}
-              </h1>
+        <h1>Time Development: </h1>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden lg:gap-3 gap-0">
+          {experience.map((item, index) => (
+            <div
+              key={index}
+              className={`group flex flex-col gap-8 lg:w-[48%] lg:h-48 lg:p-2 lg:gap-5 lg:min-h-48 min-h-full w-full  border lg:border-white border-[varchar(--highlight)] lg:translate-0 ${translateY} transition-all  ${
+                index === currentId
+                  ? `lg:translate-0 lg:shadow-[0_0_25px_5px_rgba(140,0,255,0.5)] lg:border-[varchar(--highlight)]`
+                  : ""
+              } p-2`}
+              style={
+                // Only apply inline translateY on small screens
+                typeof window !== "undefined" && window.innerWidth < 1024
+                  ? { transform: `translateY(-${currentId * 100}%)` }
+                  : {}
+              }
+            >
+              <div className="w-full h-[10%]">
+                <h1>
+                  {" "}
+                  <span className="text-2xl font-extrabold text-outline text-transparent group-hover:text-outline-hover">
+                    {index + 1}.{" "}
+                  </span>{" "}
+                  {item.time}
+                </h1>
+              </div>
+              <h2 className="text-xl">{item.description}</h2>
             </div>
-            <h2 className="text-xl">{item.description}</h2>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
@@ -107,6 +107,7 @@ const Grid2 = () => {
   return (
     <>
       <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5">
+        <h1 className="lg:text-[16px] text-12px">Comprehension of Technology: </h1>
         <div className=" relative w-full h-full lg:h-[120px] bg-neutral-950 flex justify-center items-center">
           <Image
             src={img}
@@ -143,6 +144,7 @@ const Grid3 = () => {
   return (
     <>
       <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 perspective-distant transform-3d group">
+        <h1>Language: </h1>
         <div className=" relative w-full h-full lg:h-[150px] bg-dots-universe flex justify-center items-center">
           <Image
             src={Earth}
@@ -154,7 +156,6 @@ const Grid3 = () => {
           ></div>
         </div>
         <div className="w-full flex flex-wrap justify-evenly  gap-x-2 gap-y-3 items-center group-hover:translate-z-11 group-hover:translate-x-5 transition-all">
-          <h1 className="text-[14px]">Language: </h1>
           {languages.map((item, index) => (
             <p
               key={index}
