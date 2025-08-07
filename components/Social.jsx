@@ -28,7 +28,7 @@ const Social = () => {
             variant={"outline"}
             className={`w-10 h-10 rounded-[50%]`}
           >
-            <Link href={`${item.url}`} className="text-4xl">
+            <Link href={`${item.url}`} className="text-4xl" target="_blank">
               {item.icon}
             </Link>
           </Button>

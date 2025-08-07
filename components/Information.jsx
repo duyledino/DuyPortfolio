@@ -11,8 +11,7 @@ const Information = () => {
         <span className="text-[var(--highlight)]">Le Khanh Duy</span>
       </h1>
       <h3 className="text-center lg:text-start">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        impedit aperiam voluptatum ratione quas voluptates.
+        I'm a fullstack web developer. I'm happy to build a super cool and morden web application. Feel free to contact me !
       </h3>
       <Social />
     </div>

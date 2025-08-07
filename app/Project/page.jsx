@@ -36,11 +36,12 @@ const items = [
       { icon: <BiLogoPostgresql />, glowColor: "hover:text-blue-500" },
       { icon: <SiPrisma />, glowColor: "hover:text-neutral-900" },
       { icon: <DiRedis />, glowColor: "hover:text-red-900" },
+      { icon: <SiGooglegemini />, glowColor: "hover:text-blue-900" }
     ],
   },
   {
     img: thumb3,
-    link: "https://www.youtube.com/",
+    link: "https://duy-portfolio-five.vercel.app",
     icons: [
       { icon: <TbBrandNextjs />, glowColor: "hover:text-white hover:bg-black" },
     ],
