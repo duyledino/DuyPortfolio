@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -19,9 +20,10 @@ const navItems = [
 ];
 
 const MobileNav = () => {
+  const [open,setOpen] = useState(false);
   return (
     <nav className="block lg:hidden">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Button variant={"outline"}>
             <FaAlignRight className="text-[var(--highlight)]" />
@@ -34,7 +36,7 @@ const MobileNav = () => {
           <SheetDescription className={`w-full`}>
             <ul className="w-full flex flex-col items-center text-white gap-4">
               {navItems.map((item, index) => (
-                <li className="border border-[var(--highlight)]/70 rounded-[5px] p-2 transition-all hover:bg-white hover:text-[var(--highlight)] text-center bg-transparent w-full h-full max-w-[80%] mx-auto">
+                <li onClick={()=>setOpen(false)} className="border border-[var(--highlight)]/70 rounded-[5px] p-2 transition-all hover:bg-white hover:text-[var(--highlight)] text-center bg-transparent w-full h-full max-w-[80%] mx-auto">
                   <Link href={item.url} key={index} className="block w-full h-full">
                     {" "}
                     {item.name}

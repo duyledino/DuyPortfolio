@@ -65,13 +65,13 @@ const Grid1 = () => {
   }, [currentId]);
   return (
     <>
-      <div className="w-full h-[200px] lg:h-[500px] flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden">
+      <div className="w-full h-[300px] lg:h-[500px] flex flex-col lg:flex-row lg:flex-wrap justify-between items-center overflow-y-hidden">
         <h1 className="text-outline lg:text-2xl lg:text-transparent lg:font-extrabold">Time Development </h1>
-        <div className="flex flex-col lg:flex-row lg:flex-wrap  justify-between items-center overflow-y-hidden lg:gap-3 gap-0 lg:p-3">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-between items-center overflow-y-hidden lg:gap-3 gap-0 lg:p-3 lg:mt-0 mt-5">
           {experience.map((item, index) => (
             <div
               key={index}
-              className={`group flex flex-col gap-8 lg:w-[48%] lg:h-48 lg:p-2 lg:gap-5 lg:min-h-48 min-h-full w-full  border lg:border-white border-[varchar(--highlight)] lg:translate-0 ${translateY} transition-all  ${
+              className={`group flex flex-col gap-8 lg:w-[48%] lg:h-48 lg:p-2 lg:gap-5 lg:min-h-48 min-h-full w-full border lg:border-white border-[varchar(--highlight)] lg:translate-0 ${translateY} transition-all  ${
                 index === currentId
                   ? `lg:translate-0 lg:shadow-[0_0_25px_5px_rgba(140,0,255,0.5)] lg:border-[varchar(--highlight)]`
                   : ""
@@ -107,7 +107,7 @@ const Grid2 = () => {
   const textIndex = useRotateText(framework.length);
   return (
     <>
-      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 gap-2">
+      <div className="w-full h-[300px] lg:h-[300px] py-1 flex justify-between flex-col lg:justify-center lg:gap-5 gap-4">
         <h1 className="text-12px text-outline lg:text-2xl lg:text-transparent lg:font-extrabold lg:block flex items-center justify-center">Comprehension of Technology </h1>
         <div className=" relative w-full h-full lg:h-[120px] bg-neutral-950 flex justify-center items-center">
           <Image
@@ -142,7 +142,7 @@ const Grid3 = () => {
   const textIndex = useRotateText(languages.length);
   return (
     <>
-      <div className="w-full h-[160px] lg:h-[300px] py-1 flex flex-row justify-between lg:flex-col lg:justify-center lg:gap-5 gap-2 perspective-distant transform-3d group">
+      <div className="w-full h-[300px] lg:h-[300px] py-1 flex justify-between flex-col lg:justify-center lg:gap-5 gap-4 perspective-distant transform-3d group">
         <h1 className="text-outline lg:text-2xl lg:text-transparent lg:font-extrabold lg:block flex items-center justify-center">Language </h1>
         <div className=" relative w-full h-full lg:h-[150px] bg-dots-universe flex justify-center items-center">
           <Image
@@ -214,18 +214,18 @@ const GridInfo = () => {
     };
   }, []);
   return (
-    <div className="p-2 grid lg:grid-rows-2 lg:grid-cols-3 grid-rows-7 grid-cols-1  w-full max-w-[70%] h-full gap-3 perspective-[1000px] transform-3d">
+    <div className="p-2 grid lg:grid-rows-2 lg:grid-cols-3 grid-rows-7 grid-cols-1  w-full max-w-[70%] h-full lg:gap-3 gap-5 perspective-[1000px] transform-3d">
       <GridItem
         className={`lg:col-span-2 lg:row-span-2 row-span-3 col-span-1`}
         children={<Grid1 />}
       />
       <GridItem
-        className={`lg:col-span-1 lg:row-span-1  row-span-2 col-span-1`}
+        className={`lg:col-span-1 lg:row-span-1 lg:min-h-[291px] min-h-[350px] row-span-2 col-span-1`}
         children={<Grid2 />}
       />
       <GridItem
         ref={gridRef}
-        className={`lg:col-span-1 lg:row-span-1  row-span-2 col-span-1`}
+        className={`lg:col-span-1 lg:row-span-1 lg:min-h-[291px] min-h-[350px] row-span-2 col-span-1`}
         children={<Grid3 />}
       />
     </div>

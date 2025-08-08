@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className='container mx-auto h-[85vh] flex justify-center items-center'>
+    <main className='container mx-auto lg:max-h-[85vh] min-h-[85vh] flex justify-center items-center'>
         <GridInfo/>
     </main>
   )
