@@ -9,19 +9,18 @@ import Link from "next/link";
 
 const socialItems = [
   { icon: <FaGithub />, url: "https://github.com/duyledino" },
-  { icon: <FaFacebookF />, url: "https://www.facebook.com/profile.php?id=100015368103032" },
   { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/duy-le-aa8712343" },
 ];
 
 const Social = () => {
   return (
     <div className="flex w-full justify-center lg:justify-start gap-5 items-center">
-      <a href="/myCV/CV_Lê Khánh Duy.pdf" download="LeKhanhDuy_CV.pdf">
+      <a href="/myCV/CV_Le Khanh Duy.pdf" download="LeKhanhDuy_CV.pdf">
         <Button variant={"default"} download="DUY_CV.pdf">
           <FaDownload /> My Resume
         </Button>
       </a>
-      <ul className="flex w-44 justify-between items-center">
+      <ul className="flex w-44 gap-3 items-center">
         {socialItems.map((item, index) => (
           <Button
             key={index}

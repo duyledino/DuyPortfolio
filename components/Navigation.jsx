@@ -29,10 +29,6 @@ const Navigation = ({ currentId, setId, length }) => {
           {Array.from({ length }, (_, i) => i).map((item, index) => (
             <li key={index} className={`w-6 h-6 rounded-[50%] ${index === currentId ? 'bg-[var(--highlight)]' : 'bg-white'} hover:bg-[var(--highlight)]`} onClick={()=>setId(index)}></li>
           ))}
-          {/* <li className="w-6 h-6 rounded-[50%] bg-white hover:bg-[var(--highlight)]"></li>
-          <li className="w-6 h-6 rounded-[50%] bg-white hover:bg-[var(--highlight)]"></li>
-          <li className="w-6 h-6 rounded-[50%] bg-white hover:bg-[var(--highlight)]"></li>
-          <li className="w-6 h-6 rounded-[50%] bg-white hover:bg-[var(--highlight)]"></li> */}
         </ul>
         <div
           onClick={handleNext}
